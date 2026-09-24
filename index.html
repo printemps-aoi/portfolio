@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>みずきのポートフォリオ</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+<header class="bg-indigo-600 text-white py-10 text-center">
+    <h1 class="text-3xl font-bold">
+    みずきのポートフォリオ
+    </h1>
+
+    <p class="mt-2 text-indigo-200">
+    プログラミングを勉強中!
+    </p>
+</header>
+
+<main class="max-w-3xl mx-auto px-4 py-12 space-y-16">
+    <section>
+    <h2 class="text-2xl font-bold mb-4">
+    自己紹介
+    </h2>
+
+    <div
+        class="bg-white rounded-lg shadow p-6
+        transition-all duration-300
+        hover:-translate-y-1"
+      >
+
+        <p class="text-gray-600 leading-relaxed">
+          こんにちは、みずきです！
+          プログラミングを勉強中です
+          まだ勉強中ですが、できることを少しずつ増やしています
+        </p>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">
+        スキル
+      </h2>
+
+      <ul class="flex flex-wrap gap-3">
+
+        <li
+          class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full
+          transition-all duration-200 hover:scale-110"
+        >
+          HTML
+        </li>
+
+        <li
+          class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full
+          transition-all duration-200 hover:scale-110"
+        >
+          Tailwind CSS
+        </li>
+
+        <li
+          class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full
+          transition-all duration-200 hover:scale-110"
+        >
+          JavaScript
+        </li>
+
+        <li
+          class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full
+          transition-all duration-200 hover:scale-110"
+        >
+          GitHub
+        </li>
+
+      </ul>
+
+    </section>
+
+    <section>
+
+      <h2 class="text-2xl font-bold mb-4">
+        作品
+      </h2>
+
+      <p class="text-gray-600 mb-6">
+        プログラミングを勉強中に制作した作品です
+      </p>
+
+      <section class="splide" aria-label="作品スライダー">
+
+        <div class="splide__track">
+
+          <ul class="splide__list">
+
+            <li class="splide__slide">
+
+              <div
+                class="bg-white rounded-lg shadow p-6
+                transition-all duration-300
+                hover:-translate-y-2"
+              >
+
+                <div
+                  class="h-48 bg-indigo-100 rounded-lg
+                  flex items-center justify-center"
+                >
+
+                  <p class="text-xl font-bold text-indigo-600">
+                    GitHubユーザー検索
+                  </p>
+
+                </div>
+
+                <h3 class="font-bold text-lg mt-4">
+                  GitHubユーザー情報表示ツール
+                </h3>
+
+                <p class="text-gray-600 text-sm mt-2">
+                  GitHub APIを使ってユーザー情報を取得する作品です。
+                </p>
+
+              </div>
+
+            </li>
+
+            <li class="splide__slide">
+
+              <div
+                class="bg-white rounded-lg shadow p-6
+                transition-all duration-300
+                hover:-translate-y-2"
+              >
+
+                <div
+                  class="h-48 bg-indigo-100 rounded-lg
+                  flex items-center justify-center"
+                >
+
+                  <p class="text-xl font-bold text-indigo-600">
+                    フォーム
+                  </p>
+
+                </div>
+
+                <h3 class="font-bold text-lg mt-4">
+                  入力フォーム
+                </h3>
+
+                <p class="text-gray-600 text-sm mt-2">
+                  JavaScriptを使って入力チェックを実装しました。
+                </p>
+
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </section>
+
+    </section>
+
+
+  </main>
+
+  <footer class="bg-gray-800 text-gray-400 text-center py-6 mt-16">
+
+    <p>
+      2026 みずき
+    </p>
+
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js">
+  </script>
+
+
+  <script>
+
+    new Splide(".splide", {
+      type: "loop",
+      perPage: 1,
+      gap: "1rem"
+    }).mount();
+
+  </script>
+
+
+</body>
+
+</html>
